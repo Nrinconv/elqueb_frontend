@@ -25,8 +25,8 @@ function NavigationBar() {
       linkTo: "offers",
     },
     {
-      name: "Estadísticas",
-      linkTo: "stats",
+      name: "Sobre nosotros",
+      linkTo: "about-us",
     },
   ];
 
@@ -53,12 +53,12 @@ function NavigationBar() {
         ))}
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="signin">Inicio de sesión</Link>
-        </NavbarItem>
+        {/* <NavbarItem className="hidden lg:flex">
+          <Link href="/login">Inicio de sesión</Link>
+        </NavbarItem> */}
         <NavbarItem>
-          <Button as={Link} color="primary" href="signup" variant="flat">
-            Regitrarse
+          <Button as={Link} color="primary" href="/login" variant="flat">
+            Acceder
           </Button>
         </NavbarItem>
       </NavbarContent>
