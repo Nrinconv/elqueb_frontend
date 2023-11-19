@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "titulo": "Descuento en maquinaria agrícola",
+    "descripcion": "Oferta especial para agricultores. Obtén un 15% de descuento en la compra de maquinaria agrícola. ¡Moderniza tu granja con nosotros!",
+    "ofertante": "AgroInnova",
+    "imagen": 1
+  },
+  {
+    "id": 2,
+    "titulo": "Curso gratuito de marketing digital",
+    "descripcion": "Aprende las últimas estrategias de marketing digital. Curso intensivo gratuito con certificación al finalizar. ¡Potencia tu negocio online!",
+    "ofertante": "Digital Academy",
+    "imagen": 2
+  },
+  {
+    "id": 3,
+    "titulo": "Kit de herramientas para emprendedores",
+    "descripcion": "Empieza tu propio negocio con nuestro kit de herramientas esenciales. Incluye todo lo que necesitas para comenzar tu aventura emprendedora.",
+    "ofertante": "EmprendeKit",
+    "imagen": 3
+  },
+  {
+    "id": 4,
+    "titulo": "Descuento en equipo de cocina profesional",
+    "descripcion": "Para restaurantes y chefs. Obtén un 20% de descuento en la compra de equipos de cocina profesional. ¡Mejora la eficiencia de tu cocina!",
+    "ofertante": "Gastronova",
+    "imagen": 1
+  },
+  {
+    "id": 5,
+    "titulo": "Asesoría financiera gratuita",
+    "descripcion": "¿Necesitas ayuda con tus finanzas? Ofrecemos asesoría financiera gratuita para pequeños empresarios. ¡Optimiza tus recursos!",
+    "ofertante": "Finanzapoyos",
+    "imagen": 2
+  },
+  {
+    "id": 6,
+    "titulo": "Promoción en mobiliario para comercios",
+    "descripcion": "Renueva tu tienda con nuestra promoción en mobiliario comercial. Descuentos exclusivos para negocios locales. ¡Dale un nuevo estilo a tu espacio!",
+    "ofertante": "MobiliarioXpress",
+    "imagen": 3
+  },
+  {
+    "id": 7,
+    "titulo": "Taller de diseño de marca",
+    "descripcion": "Impulsa tu negocio con una identidad de marca única. Taller práctico para crear tu logo y estrategia de marca. ¡Destaca entre la competencia!",
+    "ofertante": "BrandingLab",
+    "imagen": 1
+  },
+  {
+    "id": 8,
+    "titulo": "Descuento en insumos para panaderías",
+    "descripcion": "Oferta exclusiva para panaderos. Consigue un 10% de descuento en la compra de insumos para panaderías. ¡Haz crecer tu negocio!",
+    "ofertante": "DistribuyeHarina",
+    "imagen": 2
+  },
+  {
+    "id": 9,
+    "titulo": "Curso de programación para emprendedores",
+    "descripcion": "Aprende a programar y lleva tu emprendimiento al siguiente nivel. Curso práctico para no programadores. ¡Desarrolla tus propias soluciones!",
+    "ofertante": "CodeEmprende",
+    "imagen": 3
+  },
+  {
+    "id": 10,
+    "titulo": "Oferta en servicios de limpieza",
+    "descripcion": "Mantén tu negocio impecable. Descuento del 25% en servicios de limpieza para empresas. ¡Ambiente limpio, clientes felices!",
+    "ofertante": "CleanPro",
+    "imagen": 1
+  },
+  {
+    "id": 11,
+    "titulo": "Promoción en equipos de seguridad",
+    "descripcion": "Protege tu negocio. Descuento especial en la compra de equipos de seguridad para locales comerciales. ¡Trabaja con tranquilidad!",
+    "ofertante": "SegurEmprende",
+    "imagen": 2
+  },
+  {
+    "id": 12,
+    "titulo": "Feria de moda local",
+    "descripcion": "Descubre las últimas tendencias de la moda local. Feria con desfiles, descuentos y más. ¡Apoya a los diseñadores locales!",
+    "ofertante": "FashionLocal",
+    "imagen": 3
+  },
+  {
+    "id": 13,
+    "titulo": "Descuento en material de oficina",
+    "descripcion": "Ahorra en gastos de oficina. Descuento del 15% en la compra de material de oficina para pequeñas empresas. ¡Organiza tu espacio de trabajo!",
+    "ofertante": "OfficeSupplies",
+    "imagen": 1
+  },
+  {
+    "id": 14,
+    "titulo": "Curso de redes sociales para emprendedores",
+    "descripcion": "Potencia tu presencia en redes sociales. Curso práctico para gestionar eficazmente tus perfiles empresariales. ¡Conquista a tus seguidores!",
+    "ofertante": "SocialMediaEmprende",
+    "imagen": 2
+  },
+  {
+    "id": 15,
+    "titulo": "Descuento en herramientas de construcción",
+    "descripcion": "Para constructores y contratistas. Obtén un 20% de descuento en la compra de herramientas de construcción. ¡Construye con calidad!",
+    "ofertante": "ConstrucTools",
+    "imagen": 3
+  },
+  {
+    "id": 16,
+    "titulo": "Consultoría gratuita en marketing",
+    "descripcion": "Mejora tus estrategias de marketing. Ofrecemos consultoría gratuita para pequeños negocios. ¡Aumenta tu visibilidad y atrae más clientes!",
+    "ofertante": "MarketingBoost",
+    "imagen": 1
+  },
+  {
+    "id": 17,
+    "titulo": "Descuento en software empresarial",
+    "descripcion": "Optimiza tus operaciones. Descuento del 30% en la compra de software empresarial para emprendedores. ¡Simplifica tu gestión!",
+    "ofertante": "SoftEmprende",
+    "imagen": 2
+  },
+  {
+    "id": 18,
+    "titulo": "Oferta en servicios de consultoría legal",
+    "descripcion": "Protege tu negocio. Descuento en servicios de consultoría legal para pequeñas empresas. ¡Asesoramiento legal a tu alcance!",
+    "ofertante": "LegalEmprende",
+    "imagen": 3
+  },
+  {
+    "id": 19,
+    "titulo": "Taller de desarrollo personal para emprendedores",
+    "descripcion": "Potencia tu crecimiento personal y profesional. Taller práctico para emprendedores. ¡Desarrolla habilidades clave para el éxito!",
+    "ofertante": "CrecimientoEmprende",
+    "imagen": 1
+  }
+]
