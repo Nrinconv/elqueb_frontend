@@ -1,7 +1,10 @@
-import React from "react";
+
 import Slider from "react-slick";
-import News from "../../components/News/News";  
+import { Divider } from '@nextui-org/react';
 import Partners from "../../components/Partners/Partners";
+import News from "../../components/News/News";  
+import Statistics from "../../components/Statistics/Statistics";
+import Cards from "../../components/Card/Cards";
 
 import imageOne from "../../assets/personas.avif";
 import imageTwo from "../../assets/proyecto.jpg";
@@ -29,6 +32,7 @@ export default function Home() {
 
   return (
     <div>
+      <div>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
@@ -36,10 +40,17 @@ export default function Home() {
           </div>
         ))}
       </Slider>
-      <div style={{ marginTop: '2rem',marginBottom: '8rem' }}>
+      </div>
+      <Divider />
+      <Cards />
+      <div style={{ marginTop: '2rem', marginBottom: '8rem' }}>
         <News />
       </div>
+      <Divider />
+      <Statistics />
+      <Divider />
       <Partners />
+      <Divider />
     </div>
   );
 }

@@ -1,0 +1,48 @@
+.about-us {
+    padding: 2rem;
+    background: linear-gradient(to right, #f9f9f9 0%, #e0e0e0 100%);
+    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+  }
+  
+  .about-us h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50; /* darker color for the title */
+    font-size: 3rem; /* larger font size */
+    font-weight: bold; /* make it bold */
+  }
+  
+  .about-us .intro {
+    font-size: 1.5rem; /* larger font size */
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #34495e; /* darker color for the text */
+  }
+  
+  .about-us section {
+    margin-bottom: 2rem;
+    padding: 2rem; /* more padding */
+    background-color: #ecf0f1; /* lighter background color */
+    border-radius: 10px; /* larger border radius */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* larger box shadow */
+  }
+  
+  .about-us section h2 {
+    font-size: 2.5rem; /* larger font size */
+    margin-bottom: 1rem;
+    color: #2c3e50; /* darker color for the title */
+    /* make it bold */
+  }
+  
+  .about-us section p {
+    font-size: 1.2rem; /* larger font size */
+    line-height: 1.8; /* more line height */
+    text-align: justify;
+    color: #34495e; /* darker color for the text */
+  }
