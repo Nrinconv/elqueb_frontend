@@ -23,7 +23,7 @@ const images = [
 
 export default function Home() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <div>
-      <div>
+      <div style={{ marginTop: '5rem', marginBottom: '2rem' }}>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
@@ -41,6 +41,7 @@ export default function Home() {
         ))}
       </Slider>
       </div>
+
       <Divider />
       <Cards />
       <div style={{ marginTop: '2rem', marginBottom: '8rem' }}>

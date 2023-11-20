@@ -34,6 +34,7 @@ export default function AboutUs() {
       </section>
     </div>
       <Divider />
+
       <Partners />
     </div>
     
