@@ -39,7 +39,7 @@ export default function Filters() {
       >
         <Input
           type="text"
-          label="Búsqueda..."
+          label="¿Qué estas buscando?"
           size="sm"
           id="input-style-inner"
         />
