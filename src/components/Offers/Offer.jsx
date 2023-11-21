@@ -1,8 +1,8 @@
 import "./OffersComponent.css";
 
-import imageOne from "../../assets/offersImages/iconOne.webp";
-import imageTwo from "../../assets/offersImages/iconTwo.png";
-import imageThree from "../../assets/offersImages/iconThree.png";
+import imageOne from "../../assets/offersImages/one.jpg";
+import imageTwo from "../../assets/offersImages/two.jpg";
+import imageThree from "../../assets/offersImages/three.jpg";
 
 import dataOffers from "../../mocks/Offers.json";
 
@@ -16,6 +16,7 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+import { useState } from "react";
 
 const relation = {
   1: imageOne,
@@ -25,12 +26,22 @@ const relation = {
 
 export default function Offer() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const [infoModal, setInfoModal] = useState({});
 
   return (
     <>
-      <div className="gap-2 grid grid-cols-2 sm:grid-cols-3">
+      <div className="gap-8 grid grid-cols-2 sm:grid-cols-4">
         {dataOffers.map((data) => (
-          <Card className="py-4" key={data.id} isPressable onPress={onOpen}>
+          <Card
+            className="py-4"
+            key={data.id}
+            isPressable
+            onPress={onOpen}
+            onClick={() => {
+              setInfoModal(data);
+            }}
+            id="card-offer"
+          >
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
               <p className="text-tiny uppercase font-bold">
                 Oferta: {data.ofertante}
@@ -39,14 +50,14 @@ export default function Offer() {
                 {data.titulo}
               </h4>
             </CardHeader>
-            <CardBody className="overflow-visible py-2">
+            <CardBody className="overflow-visible py-2" id="img-offer">
               <Image
-                isBlurred
                 isZoomed
                 alt={data.titulo}
                 className="object-cover rounded-xl"
                 src={relation[data.imagen]}
                 width={300}
+                shadow="none"
               />
             </CardBody>
           </Card>
@@ -57,27 +68,19 @@ export default function Offer() {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                Modal Title
+                {infoModal.titulo}
               </ModalHeader>
               <ModalBody>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat
-                  consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex
-                  incididunt cillum quis. Velit duis sit officia eiusmod Lorem
-                  aliqua enim laboris do dolor eiusmod. Et mollit incididunt
-                  nisi consectetur esse laborum eiusmod pariatur proident Lorem
-                  eiusmod et. Culpa deserunt nostrud ad veniam.
-                </p>
+                <h3>{infoModal.ofertante}</h3>
+                <p>{infoModal.descripcion}</p>
+                <Image
+                  isBlurred
+                  isZoomed
+                  alt={infoModal.titulo}
+                  className="object-cover rounded-xl"
+                  src={relation[infoModal.imagen]}
+                  width={300}
+                />
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

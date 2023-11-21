@@ -1,3 +1,5 @@
+import "./NavigationBar.css";
+
 import React from "react";
 import {
   Navbar,
@@ -31,7 +33,14 @@ function NavigationBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      height="6rem"
+      isBordered="true"
+      shouldHideOnScroll="true"
+      maxWidth="2xl"
+      id="navbar-content"
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -43,10 +52,10 @@ function NavigationBar() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-10" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={`${item}-${index}`}>
-            <Link color="foreground" href={item.linkTo}>
+            <Link href={item.linkTo} id="text-nabvar">
               {item.name}
             </Link>
           </NavbarItem>
@@ -57,7 +66,13 @@ function NavigationBar() {
           <Link href="/login">Inicio de sesión</Link>
         </NavbarItem> */}
         <NavbarItem>
-          <Button as={Link} color="primary" href="/login" variant="flat">
+          <Button
+            as={Link}
+            color="primary"
+            href="/login"
+            variant="flat"
+            id="btn-login"
+          >
             Acceder
           </Button>
         </NavbarItem>

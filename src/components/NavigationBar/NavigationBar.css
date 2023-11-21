@@ -1,0 +1,16 @@
+#navbar-content {
+  background-color: rgb(0, 92, 168);
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+#text-nabvar {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: larger;
+}
+
+#btn-login {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}

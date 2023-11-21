@@ -1,10 +1,6 @@
 import "./OffersComponent.css";
 import { useMemo, useState } from "react";
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
 import {
   Dropdown,
   DropdownTrigger,
@@ -37,13 +33,21 @@ export default function Filters() {
 
   return (
     <div className="flex flex-col gap-4" id="content-filters-offers">
-      <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
-        <Input type="text" label="Búsqueda..." size="sm" />
+      <div
+        className="flex w-full flex-wrap md:flex-nowrap gap-4"
+        id="input-style"
+      >
+        <Input
+          type="text"
+          label="Búsqueda..."
+          size="sm"
+          id="input-style-inner"
+        />
       </div>
       <div className="flex w-full flex-wrap md:flex-nowrap gap-10">
         <Dropdown id="filter">
           <DropdownTrigger>
-            <Button variant="bordered" className="capitalize">
+            <Button variant="bordered" className="capitalize" id="btn-dropdown">
               {selectedValueCat}
             </Button>
           </DropdownTrigger>
@@ -54,6 +58,7 @@ export default function Filters() {
             selectionMode="single"
             selectedKeys={selectedCat}
             onSelectionChange={setSelectedCat}
+            id="btn-dropdown-inner"
           >
             <DropdownItem key="cat1">Categoría</DropdownItem>
             <DropdownItem key="cat2">Cat2</DropdownItem>
@@ -64,7 +69,7 @@ export default function Filters() {
         </Dropdown>
         <Dropdown id="filter">
           <DropdownTrigger>
-            <Button variant="bordered" className="capitalize">
+            <Button variant="bordered" className="capitalize" id="btn-dropdown">
               {selectedValueReg}
             </Button>
           </DropdownTrigger>
@@ -75,6 +80,7 @@ export default function Filters() {
             selectionMode="single"
             selectedKeys={selectedReg}
             onSelectionChange={setSelectedReg}
+            id="btn-dropdown-inner"
           >
             <DropdownItem key="cat1">Región</DropdownItem>
             <DropdownItem key="cat2">Cat2</DropdownItem>
@@ -85,7 +91,7 @@ export default function Filters() {
         </Dropdown>
         <Dropdown className="filter">
           <DropdownTrigger>
-            <Button variant="bordered" className="capitalize">
+            <Button variant="bordered" className="capitalize" id="btn-dropdown">
               {selectedValueOfertante}
             </Button>
           </DropdownTrigger>
@@ -97,6 +103,7 @@ export default function Filters() {
             selectedKeys={selectedOfertante}
             onSelectionChange={setSelectedOfertante}
             size="lg"
+            id="btn-dropdown-inner"
           >
             <DropdownItem key="cat1">Ofertantes</DropdownItem>
             <DropdownItem key="cat2">Cat2</DropdownItem>
@@ -105,7 +112,7 @@ export default function Filters() {
             <DropdownItem key="cat5">Cat5</DropdownItem>
           </DropdownMenu>
         </Dropdown>
-        <Button color="primary" variant="bordered">
+        <Button color="primary" variant="bordered" id="btn-search">
           Buscar
         </Button>
       </div>

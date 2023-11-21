@@ -5,3 +5,39 @@
 #title-cards-offer {
   text-align: -webkit-left;
 }
+
+#input-style {
+  border: 1px solid #005ca8;
+  border-radius: 9px;
+}
+
+#input-style-inner {
+  color: #005ca8;
+}
+
+#btn-dropdown {
+  font-weight: 400;
+  color: #005ca8;
+  border: 1px solid #005ca8;
+}
+
+#btn-dropdown-inner {
+  color: #005ca8;
+}
+
+#btn-search {
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #005ca8;
+  border: 5px solid #005ca8;
+}
+
+#card-offer {
+  box-shadow: inset -5px 5px #009ee21b;
+}
+
+#img-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
