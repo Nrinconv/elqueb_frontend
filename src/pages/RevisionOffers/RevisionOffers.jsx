@@ -1,12 +1,14 @@
+import PendingOffers from "../../components/PendingOffers/PendingOffers";
 
-import React from 'react';
-
-function RevisionOffers() {
+export default function RevisionOffers() {
   return (
     <div>
-      {/* Your component content goes here */}
+      <>
+        <h1 id="h1">Ofertas perdientes de revisión</h1>
+        <div className="offer-content">
+          <PendingOffers />
+        </div>
+      </>
     </div>
   );
 }
-
-export default RevisionOffers;

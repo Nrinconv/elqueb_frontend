@@ -1,12 +1,16 @@
-import "./OffersComponent.css";
-
 import imageOne from "../../assets/offersImages/one.jpg";
 import imageTwo from "../../assets/offersImages/two.jpg";
 import imageThree from "../../assets/offersImages/three.jpg";
 
 import dataOffers from "../../mocks/Offers.json";
 
-import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Image,
+} from "@nextui-org/react";
 import {
   Modal,
   ModalContent,
@@ -24,7 +28,15 @@ const relation = {
   3: imageThree,
 };
 
-export default function Offer() {
+const states = {
+  0: "success",
+  1: "default",
+  2: "warning",
+};
+
+import { Chip } from "@nextui-org/react";
+
+export default function MyOffers() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [infoModal, setInfoModal] = useState({});
 
@@ -60,6 +72,15 @@ export default function Offer() {
                 shadow="none"
               />
             </CardBody>
+            <CardFooter id="img-offer">
+              {data.imagen === 1 ? (
+                <Chip color={states[0]}>Publicada</Chip>
+              ) : data.imagen === 2 ? (
+                <Chip color={states[1]}>Cerrada</Chip>
+              ) : (
+                <Chip color={states[2]}>Pendiente</Chip>
+              )}
+            </CardFooter>
           </Card>
         ))}
       </div>
@@ -71,6 +92,13 @@ export default function Offer() {
                 {infoModal.titulo}
               </ModalHeader>
               <ModalBody>
+                {infoModal.imagen === 1 ? (
+                  <Chip color={states[0]}>Publicada</Chip>
+                ) : infoModal.imagen === 2 ? (
+                  <Chip color={states[1]}>Cerrada</Chip>
+                ) : (
+                  <Chip color={states[2]}>Pendiente</Chip>
+                )}
                 <h3>{infoModal.ofertante}</h3>
                 <p>{infoModal.descripcion}</p>
                 <div id="img-offer">
@@ -84,11 +112,8 @@ export default function Offer() {
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
-                  Close
+                  Cerrar
                 </Button>
-                {/* <Button color="primary" onPress={onClose}>
-                  Action
-                </Button> */}
               </ModalFooter>
             </>
           )}

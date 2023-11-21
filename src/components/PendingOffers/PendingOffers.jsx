@@ -1,5 +1,3 @@
-import "./OffersComponent.css";
-
 import imageOne from "../../assets/offersImages/one.jpg";
 import imageTwo from "../../assets/offersImages/two.jpg";
 import imageThree from "../../assets/offersImages/three.jpg";
@@ -24,7 +22,7 @@ const relation = {
   3: imageThree,
 };
 
-export default function Offer() {
+export default function PendingOffers() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [infoModal, setInfoModal] = useState({});
 
@@ -84,11 +82,15 @@ export default function Offer() {
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
-                  Close
+                  Rechazar
                 </Button>
-                {/* <Button color="primary" onPress={onClose}>
-                  Action
-                </Button> */}
+                <Button
+                  color="success"
+                  onPress={onClose}
+                  style={{ color: "#ffffff", fontWeight: "bold" }}
+                >
+                  Aceptar
+                </Button>
               </ModalFooter>
             </>
           )}
