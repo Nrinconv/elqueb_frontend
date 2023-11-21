@@ -1,0 +1,82 @@
+ /* body {
+    min-height: 100vh;
+    background: linear-gradient(to right,  #009a3e48,#005ca865, #009ee2c9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+  } */
+
+  .offer-container {
+    max-width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+  }
+  .offer-container h1 {
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .offer-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .offer-form label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .offer-form fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .offer-form input, .offer-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+  
+  .offer-form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #009a3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .offer-form button:hover {
+    background-color: #007a2f;
+  }
+
+  .offer-form select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+  .offer-form .submit-fieldset {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .offer-form .submit-fieldset button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #009a3e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
