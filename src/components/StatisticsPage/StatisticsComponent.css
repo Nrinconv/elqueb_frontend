@@ -1,0 +1,47 @@
+#card-statistics {
+  box-shadow: 0px 0px 5px 1px #009ee244;
+}
+
+#text-header-statistics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 20px;
+}
+
+#title-cards-offer {
+  text-align: -webkit-center;
+  font-weight: 700;
+  font-size: 25px;
+  color: #005ca8;
+}
+
+#title-statistics-general {
+  font-weight: 700;
+  font-size: 42px;
+  color: #009ee2;
+  margin-bottom: 25px;
+}
+
+#icon-card-statistic {
+  font-size: 70px;
+  margin: 5px;
+  color: #009ee2;
+}
+
+#value-card-statistic {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.map {
+  height: 900px;
+  background-color: #ffffff;
+}
+
+#title-map {
+  font-weight: 700;
+  font-size: 42px;
+  color: #009ee2;
+}
