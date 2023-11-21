@@ -5,6 +5,7 @@ import Partners from "../../components/Partners/Partners";
 import News from "../../components/News/News";  
 import Statistics from "../../components/Statistics/Statistics";
 import Cards from "../../components/Card/Cards";
+import SliderComponent from "../../components/Slider/SliderComponent";
 
 import imageOne from "../../assets/personas.avif";
 import imageTwo from "../../assets/proyecto.jpg";
@@ -23,8 +24,8 @@ const images = [
 
 export default function Home() {
   var settings = {
-    dots: false,
-    infinite: true,
+    dots: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
@@ -32,19 +33,13 @@ export default function Home() {
 
   return (
     <div>
-      <div style={{ marginTop: '5rem', marginBottom: '2rem' }}>
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <img src={image} alt={`Slide ${index}`} style={{ width: '100%', height: 'auto' }} />
-          </div>
-        ))}
-      </Slider>
-      </div>
-
+      <SliderComponent images={images} settings={settings} />
       <Divider />
+      
       <Cards />
-      <div style={{ marginTop: '2rem', marginBottom: '8rem' }}>
+      <Divider />
+
+      <div style={{ marginTop: '4rem', marginBottom: '8rem' }}>
         <News />
       </div>
       <Divider />
