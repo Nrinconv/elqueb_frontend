@@ -3,6 +3,9 @@ import Home from "../pages/home/Home";
 import Offers from "../pages/offers/Offers";
 import AboutUs from "../pages/about-us/AboutUs";
 import Login from "../pages/login/Login";
+import AddOffer from "../pages/addOffer/addOffer";
+import RevisionOffers from "../pages/RevisionOffers/RevisionOffers";
+import MyOffers from "../pages/myOffers/myOffers";
 
 export default function PrincipalRoutes() {
   return (
@@ -13,9 +16,10 @@ export default function PrincipalRoutes() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/statistics" element={<Home />} />
-        <Route path="/revision-offers" element={<Home />} />
-        <Route path="/my-offers" element={<Home />} />
-        <Route path="/add-offer" element={<Home />} />
+
+        <Route path="/add-offer" element={<AddOffer />} />
+        <Route path="/revision-offers" element={<RevisionOffers />} />
+        <Route path="/my-offers" element={<MyOffers />} />
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </>
