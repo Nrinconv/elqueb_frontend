@@ -1,0 +1,33 @@
+
+[
+    {
+      "title": "Colombia: Potencia mundial de la economía local",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+      "image": "https://example.com/news1.jpg"
+    },
+    {
+      "title": "SE ABRIERON CONVOCATORIAS A SUBSIDIO DE VIVIENDA!",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore",
+      "image": "../assets/proyecto.jpg"
+    },
+    {
+      "title": "¿QUIERES LLEVAR TU NEGOCIO A OTRO NIVEL?",
+      "description": "Una nueva iniciativa internacional ha sido lanzada con el objetivo de potenciar y fortalecer el crecimiento de negocios en múltiples sectores. Esta iniciativa, respaldada por líderes empresariales y gubernamentales, tiene como objetivo principal fomentar la innovación y ofrecer apoyo integral a emprendedores y empresas emergentes. ",
+      "image": "https://example.com/news3.jpg"
+    },
+    {
+      "title": "News 4",
+      "description": "This is a short description of news item 4.",
+      "image": "https://example.com/news4.jpg"
+    },
+    {
+      "title": "News 5",
+      "description": "This is a short description of news item 5.",
+      "image": "https://example.com/news5.jpg"
+    },
+    {
+      "title": "News 6",
+      "description": "This is a short description of news item 6.",
+      "image": "https://example.com/news6.jpg"
+    }
+  ]

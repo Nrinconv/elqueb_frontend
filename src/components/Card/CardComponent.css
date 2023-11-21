@@ -1,0 +1,40 @@
+  card {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      width: 250px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+      cursor: pointer;
+      border-radius: 15px; 
+    
+      background-color: #f8f9fa; /* Light gray background */
+      border-radius: 10px; /* Rounded corners */
+      overflow: hidden; /* Clip the content to the border radius */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      transition: transform 0.3s ease; /* Smooth transform transition */
+      height: 100%; /* Make the card fill the entire height of its parent div */
+    }
+    
+    .card:hover {
+      transform: scale(1.02); /* Slightly scale up the card on hover */
+    }
+    
+    .card-content {
+      padding: 1rem; /* Add some space around the content */
+    }
+    
+    .card-title {
+      margin-top: 0; /* Remove the top margin of the title */
+      font-size: 1.2rem; /* Increase the font size of the title */
+      font-weight: bold; /* Make the title bold */
+    }
+    
+    .card-text {
+      color: #333; /* Dark gray text */
+      line-height: 1.5; /* Increase the line height for better readability */
+    }

@@ -1,0 +1,68 @@
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .news-item {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clip the content to the border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+    height:100% ;
+  }
+  .news-item:hover {
+    transform: scale(1.02); /* Slightly scale up the card on hover */
+  }
+  .news-item-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Cover the image container without stretching */
+  }
+  .news-content {
+    padding: 1rem; /* Add some space around the content */
+  }
+  .news-title-new {
+    margin-top: 0; /* Remove the top margin of the title */
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .news-title-new {
+    margin-bottom: 1rem;
+    
+  }
+  
+  .news-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .news-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+  }
+  
+  .news-title {
+    color: #005CA8;
+    text-align: start;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+  .news-title-new{
+    color: #005CA8;
+    text-align: start;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
