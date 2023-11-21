@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faStarHalfAlt, faHeartbeat,faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 import './StatisticsComponent.css';
+import { Divider } from "@nextui-org/react";
 
 function Statistics() {
     const stats = [
@@ -12,6 +13,7 @@ function Statistics() {
   
     return (
         <div>
+          <Divider/>
           <h2 className="statistics-title">Nuestras Cifras</h2>
           <div className="statistics-container">
             {stats.map((stat, index) => (
