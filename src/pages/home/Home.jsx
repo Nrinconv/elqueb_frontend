@@ -16,8 +16,10 @@ export default function Home() {
   return (
     <div>
       <SearchComponent />
-
       <Divider/>
+      <Divider color="red" />
+
+      <Partners />
       <Statistics />
       <CarouselComponent />
       <Divider color="red" />
@@ -29,7 +31,6 @@ export default function Home() {
       </div>
       <Divider id="divider-section" />
       <Divider id="divider-section" />
-      <Partners />
       <Divider id="divider-section" />
     </div>
   );

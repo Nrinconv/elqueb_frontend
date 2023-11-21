@@ -1,0 +1,66 @@
+.container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #009ee281;
+    background-blend-mode: multiply;
+
+  }
+  
+  .title {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2rem;
+  }
+  
+  .text {
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+
+  .textField {
+    background-color: #fff;
+    margin-top: 2rem;
+    width: 70%;
+    border-radius: 4px;
+  }
+  
+  .textField .MuiOutlinedInput-root {
+    fieldset {
+      border-color: gray;
+    }
+  
+    &:hover fieldset {
+      border-color: #3f51b5;
+    }
+  
+    &.Mui-focused fieldset {
+      border-color: #3f51b5;
+    }
+  }
+
+  .button {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    margin-top: 2rem;
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 8px;
+    text-transform: none;
+  }
+  
+  .button:hover {
+    background-color: #303f9f;
+  }
