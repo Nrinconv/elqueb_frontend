@@ -1,10 +1,12 @@
-import { Card, Image, Link as NextLink } from '@nextui-org/react';
+import { Card, Link as NextLink } from '@nextui-org/react';
 import './CardsComponent.css';
 import image1 from '../../assets/proyecto.jpg';
 
 function Cards() {
+  
   const cards = [
     {link: '/proyectos', image: image1, text: 'Proyectos'},
+    {link: '/about', image: image1, text: 'Proyectos'},
     {link: '/about', image: image1, text: 'Proyectos'},
     {link: '/about', image: image1, text: 'Proyectos'},
     {link: '/about', image: image1, text: 'Proyectos'},

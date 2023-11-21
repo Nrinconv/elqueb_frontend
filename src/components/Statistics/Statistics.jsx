@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faStar, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faStarHalfAlt, faHeartbeat,faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 import './StatisticsComponent.css';
 
 function Statistics() {
     const stats = [
-      { icon: faUser, title: 'Users', description: 'Over 10,000 users' },
-      { icon: faStar, title: 'Reviews', description: '4.5 average rating' },
-      { icon: faHeart, title: 'Favorites', description: 'Over 1,000 favorites' },
-      // add more stats...
+      { icon: faUsers, title: 'Emprededores', description: 'Hemos apoyado alrededor 10M' },
+      { icon: faStarHalfAlt, title: 'Reviews', description: '4.5 average rating' },
+      { icon: faHeartbeat, title: 'Favorites', description: 'Over 1,000 favorites' },
+      { icon: faGlobeAmericas, title: 'Global Reach', description: 'Users from over 100 countries' },
     ];
   
     return (

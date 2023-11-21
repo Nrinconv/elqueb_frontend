@@ -29,9 +29,9 @@ export default function Home() {
       </div>
       <Divider />
       <Statistics />
-      <Divider className="custom-divider" />
+      <Divider/>
       <Partners />
-      <Divider className="custom-divider" />
+      <Divider />
     </div>
   );
 }

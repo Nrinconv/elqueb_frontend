@@ -3,6 +3,8 @@
     margin-bottom: 8rem;
   }
 
-  .custom-divider {
-    border-top-color: red !important;
+    .custom-divider {
+      border-top: 2px solid #f8f9fa;
+      margin: 2rem 0;
+    
   }

@@ -1,6 +1,5 @@
 .cards-container {
   padding: 1rem;
-  background-color: #c7d31e31;
   display: flex;
   justify-content: space-around;
 }
@@ -23,10 +22,10 @@
   }
   .card {
   position: relative;
-  width: 250px;
-  height: 300px;
+  width: 200px;
+  height: 350px;
   overflow: hidden;
-  margin: 10px;
+  margin: 7px;
   }
   
   .card:hover {
