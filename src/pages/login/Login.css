@@ -1,3 +1,31 @@
 #general-form {
   align-items: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+#card-login-text {
+  color: #005ca8;
+}
+
+#btn-form {
+  background-color: #005ca8;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#text-link-form {
+  color: #009ee2;
+}
+
+#text-header-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #005ca8;
+}
+
+#general-card-form {
+  box-shadow: 0px 0px 10px 3px #009ee244;
 }

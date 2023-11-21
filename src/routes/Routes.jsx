@@ -12,6 +12,10 @@ export default function PrincipalRoutes() {
         <Route path="/offers" element={<Offers />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/statistics" element={<Home />} />
+        <Route path="/revision-offers" element={<Home />} />
+        <Route path="/my-offers" element={<Home />} />
+        <Route path="/add-offer" element={<Home />} />
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </>
