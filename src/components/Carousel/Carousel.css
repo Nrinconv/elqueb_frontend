@@ -1,0 +1,15 @@
+.carousel-container {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  
+  .carousel-container .carousel .slide img {
+    border-radius: 10px;
+    border: 0px solid #009EE2; 
+    box-shadow: 15px #009ee244;
+  }
+  
+  .carousel .control-arrow:hover,
+  .carousel .thumbs-wrapper .thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
