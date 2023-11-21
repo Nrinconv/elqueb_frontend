@@ -12,13 +12,17 @@
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background-color: white;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 10px 3px #009ee244;
+    margin-top: 7rem;
   }
   .offer-container h1 {
-    color: #333;
+    color: #005ca8;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2.4rem;
+    font-weight: 600;
+
   }
   .offer-form {
     display: grid;
@@ -75,8 +79,32 @@
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
     color: #fff;
-    background-color: #009a3e;
+    background-color: #005ca8;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 600;
+  }
+
+  #description {
+    width: 100%;
+  }
+
+  .offer-form input, .offer-form textarea, .offer-form select {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .offer-form input:hover, .offer-form textarea:hover, .offer-form select:hover {
+    background-color: #b4b2b270;
+    border-color: #b3b3b3;
+  }
+  
+  .offer-form input:focus, .offer-form textarea:focus, .offer-form select:focus {
+    border-color: #009a3e;
+    outline: none;
   }
