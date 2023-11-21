@@ -30,6 +30,10 @@ function NavigationBar() {
       name: "Sobre nosotros",
       linkTo: "about-us",
     },
+    {
+      name: "Novedades",
+      linkTo: "novedades",
+    },
   ];
 
   return (

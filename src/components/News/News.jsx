@@ -32,7 +32,7 @@ function NewsItem({ title, description, image }) {
   export default function News() {
     return (
       <div className="news-section">
-        <h1 className="news-title">NOTICIAS</h1>
+        <h1 className="news-title">NOVEDADES</h1>
         <div className="news-container">
           {newsData.map((item, index) => (
             <div className="news-item" key={index}>
