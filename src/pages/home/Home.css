@@ -6,5 +6,7 @@
     .custom-divider {
       border-top: 2px solid #f8f9fa;
       margin: 2rem 0;
-    
+  }
+  .invert-colors {
+    filter: invert(1);
   }

@@ -1,5 +1,6 @@
 import Slider from "react-slick";
-import { Divider } from "@nextui-org/react";
+import  { useState } from 'react';
+import { Divider, Button } from "@nextui-org/react";
 import Partners from "../../components/Partners/Partners";
 import News from "../../components/News/News";
 import Statistics from "../../components/Statistics/Statistics";
@@ -13,8 +14,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
+  
   return (
+
     <div>
+      
       <SearchComponent />
       <Divider/>
       <Partners />
@@ -27,6 +31,7 @@ export default function Home() {
       <Divider id="divider-section" />
       <Divider id="divider-section" />
       <Divider id="divider-section" />
+      
     </div>
   );
 }
