@@ -27,7 +27,7 @@ const SearchComponent = () => {
               marginTop: "1rem",
               marginRight: "2rem",
               marginBottom: "3rem",
-              marginLeft: "4rem",,
+              marginLeft: "4rem",
             }}
           >
             <Typography variant="h4" className={styles.title}>
@@ -67,7 +67,7 @@ const SearchComponent = () => {
           >
             <Button className={styles.button} variant="contained">
               <Link to={`/offers/${search}`} className="btn btn-primary">
-                Sign up
+                Buscar
               </Link>
             </Button>
           </Grid>
