@@ -5,40 +5,39 @@ import { MapContainer, GeoJSON } from "react-leaflet";
 import mapData from "../../mocks/datos_modificados.json";
 
 const mapInfo = [
-  { SANTANDER: 15 },
-  { RISARALDA: 12 },
-  { "LA GUAJIRA": 1 },
-  { CHOCÓ: 2 },
-  { CÓRDOBA: 12 },
-  { VAUPÉS: 4 },
-  { CALDAS: 8 },
-  { CESAR: 10 },
-  { META: 2 },
-  { ARAUCA: 9 },
-  { QUINDIO: 14 },
-  { CUNDINAMARCA: 9 },
-  { BOGOTÁ: 11 },
-  { TOLIMA: 8 },
-  { BOYACÁ: 9 },
-  { HUILA: 13 },
-  { CAQUETÁ: 9 },
-  { VICHADA: 14 },
-  { GUAINÍA: 15 },
-  { ATLÁNTICO: 5 },
-  { "VALLE DEL CAUCA": 3 },
-  { "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA": 15 },
-  { BOLÍVAR: 0 },
-  { "NORTE DE SANTANDER": 1 },
-  { CASANARE: 6 },
-  { NARIÑO: 6 },
-  { GUAVIARE: 11 },
-  { MAGDALENA: 15 },
-  { CAUCA: 4 },
-  { AMAZONAS: 15 },
-  { SUCRE: 6 },
-  { PUTUMAYO: 10 },
-  { ANTIOQUIA: 6 },
-  { "BOGOTÁ, D.C.": 22 },
+  { CAUCA: 14 },
+  { PUTUMAYO: 2 },
+  { SANTANDER: 13 },
+  { "LA GUAJIRA": 4 },
+  { CAQUETÁ: 14 },
+  { CUNDINAMARCA: 13 },
+  { "VALLE DEL CAUCA": 9 },
+  { MAGDALENA: 13 },
+  { "NORTE DE SANTANDER": 14 },
+  { "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA": 8 },
+  { META: 7 },
+  { CÓRDOBA: 11 },
+  { VAUPÉS: 6 },
+  { ARAUCA: 3 },
+  { BOGOTÁ: 3 },
+  { CALDAS: 4 },
+  { CHOCÓ: 15 },
+  { BOYACÁ: 0 },
+  { GUAINÍA: 2 },
+  { ATLÁNTICO: 4 },
+  { RISARALDA: 14 },
+  { TOLIMA: 6 },
+  { ANTIOQUIA: 3 },
+  { SUCRE: 2 },
+  { HUILA: 4 },
+  { CESAR: 4 },
+  { QUINDIO: 5 },
+  { AMAZONAS: 12 },
+  { BOLÍVAR: 15 },
+  { GUAVIARE: 14 },
+  { NARIÑO: 4 },
+  { VICHADA: 13 },
+  { CASANARE: 8 },
 ];
 
 function findValueByKey(arr, key) {
@@ -57,13 +56,13 @@ function onEachFeatureWrapper(mapInfo) {
     layer.bindPopup(
       "<strong>" +
         DPTO_CNMBR +
-        "</strong> <br> Número de actores :&nbsp;" +
+        "</strong> <br> Número de ofertas:&nbsp;" +
         value
     );
   };
 }
 
-export function Map() {
+export function MapTwo() {
   const stylingFunction = (feature) => {
     const DPTO_CNMBR = feature.properties.DPTO_CNMBR;
     const tasa = findValueByKey(mapInfo, DPTO_CNMBR);
@@ -78,35 +77,35 @@ export function Map() {
         };
       } else if (tasa >= 12) {
         return {
-          fillColor: "#005CA8",
+          fillColor: "#009EE2",
           color: "black",
           weight: 1,
           fillOpacity: 1,
         };
       } else if (tasa >= 9) {
         return {
-          fillColor: "#3C6B91",
+          fillColor: "#2787B0",
           color: "black",
           weight: 1,
           fillOpacity: 1,
         };
       } else if (tasa >= 6) {
         return {
-          fillColor: "#5BA3DE",
+          fillColor: "#38C1FC",
           color: "black",
           weight: 1,
           fillOpacity: 1,
         };
       } else if (tasa >= 3) {
         return {
-          fillColor: "#2B4D69",
+          fillColor: "#1E6887",
           color: "black",
           weight: 1,
           fillOpacity: 1,
         };
       } else if (tasa > 0) {
         return {
-          fillColor: "#457CA8",
+          fillColor: "#15485E",
           color: "black",
           weight: 1,
           fillOpacity: 1,
@@ -127,7 +126,7 @@ export function Map() {
   return (
     <div>
       <h1 className="text-center" id="title-map">
-        Actores registrados
+        Ofertas publicadas
       </h1>
       <MapContainer
         className="map"

@@ -1,9 +1,8 @@
 import "./Statistics.css";
 
-import { Divider } from "@nextui-org/react";
-
 import StatisticsComponent from "../../components/StatisticsPage/StatisticsComponent";
 import { Map } from "../../components/StatisticsPage/Map";
+import { MapTwo } from "../../components/StatisticsPage/MapTwo";
 
 export default function Statistics() {
   return (
@@ -11,8 +10,10 @@ export default function Statistics() {
       <div className="statistics-content">
         <StatisticsComponent />
       </div>
-      <Divider id="divider-section" />
-      <Map />
+      <div className="gap-8 grid grid-cols-2">
+        <Map />
+        <MapTwo />
+      </div>
     </>
   );
 }
