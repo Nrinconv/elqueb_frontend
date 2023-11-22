@@ -65,7 +65,11 @@ const SearchComponent = () => {
               marginLeft: "4rem",
             }}
           >
-            <Button className={styles.button} variant="contained">
+            <Button
+              sx={{ borderRadius: "80px" }}
+              className={styles.button}
+              variant="contained"
+            >
               <Link to={`/offers/${search}`} className="btn btn-primary">
                 Buscar
               </Link>
