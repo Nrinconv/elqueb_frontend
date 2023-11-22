@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faStarHalfAlt, faHeartbeat,faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 import './StatisticsComponent.css';
 import { Divider } from "@nextui-org/react";
 import { GiStrong } from "react-icons/gi";
