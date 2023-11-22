@@ -17,12 +17,11 @@ export default function Home() {
     <div>
       <SearchComponent />
       <Divider/>
-      <Divider color="red" />
-
       <Partners />
-      <Statistics />
+      <Divider/>
       <CarouselComponent />
-      <Divider color="red" />
+      <Statistics />
+      <Divider/>
 
       <Cards />
 

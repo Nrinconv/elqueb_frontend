@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #009ee281;
+    background-color: #009ee245;
     background-blend-mode: multiply;
 
   }
@@ -27,6 +27,8 @@
     margin-bottom: 2rem;
     font-size: 1.2rem;
     line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 500;
   }
   
 
@@ -34,21 +36,21 @@
     background-color: #fff;
     margin-top: 2rem;
     width: 70%;
-    border-radius: 4px;
+    border-radius: 100px;
+    
   }
   
   .textField .MuiOutlinedInput-root {
-    fieldset {
-      border-color: gray;
-    }
+    border-radius: 4px; /* Add rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
   
-    &:hover fieldset {
-      border-color: #3f51b5;
-    }
+  .textField .MuiOutlinedInput-root:hover {
+    border-color: none; /* Change border color on hover */
+  }
   
-    &.Mui-focused fieldset {
-      border-color: #3f51b5;
-    }
+  .textField .MuiOutlinedInput-root.Mui-focused {
+    border-color: none; /* Change border color when focused */
   }
 
   .button {

@@ -1,8 +1,8 @@
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import imageOne from "../../assets/tienda.webp";
-import imageTwo from "../../assets/proyecto.jpg";
-import imageThree from "../../assets/campesinos.jpg";
+import imageOne from "../../assets/findeter1.png";
+import imageTwo from "../../assets/findeter2.png";
+import imageThree from "../../assets/findeter3.png";
 import './Carousel.css';
 
 const CarouselComponent = () => {
@@ -15,7 +15,7 @@ const CarouselComponent = () => {
 
   return (
     <div className="carousel-container">
-      <Carousel showThumbs={false} dynamicHeight={true} showStatus={false}>
+      <Carousel showThumbs={false} dynamicHeight={true} showStatus={false} interval={3000} >
         {images.map((image, index) => (
           <div key={index}>
             <img src={image} alt={`Slide ${index}`} />

@@ -13,7 +13,11 @@ const SearchComponent = () => {
   >
     <Grid container direction="column" spacing={2}>
       <Grid item xs={6} md={12}>
-        <Grid sx={{ margin: '2rem' }}>
+        <Grid sx={{ marginTop: '1rem', 
+                    marginRight: '2rem', 
+                    marginBottom: '3rem', 
+                    marginLeft: '4rem'
+                     }}>
       <Typography variant="h4" className={styles.title}>
         ¿Estás buscando potenciar tu negocio?
       </Typography>
@@ -24,15 +28,22 @@ const SearchComponent = () => {
         </Grid>
 
     <Grid item xs={6} md={6}
-    sx={{ margin: '2rem' }}>
+    sx={{ marginTop: '3rem', 
+    marginRight: '2rem', 
+    marginBottom: '1.5rem', 
+    marginLeft: '4rem',
+     }}>
       <TextField
     className={styles.textField}
     label="¿Qué oportunidad estás buscando?"
-    variant="outlined"
+    variant="filled"
     />
     </Grid>
 
-    <Grid sx={{ margin: '2rem' }}>
+    <Grid sx={{ marginTop: '1rem', 
+    marginRight: '2.5rem', 
+    marginBottom: '3rem', 
+    marginLeft: '4rem' }}>
       <Button
       className={styles.button}
       variant="contained">
