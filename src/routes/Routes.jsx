@@ -7,6 +7,7 @@ import AddOffer from "../pages/addOffer/addOffer";
 import RevisionOffers from "../pages/RevisionOffers/RevisionOffers";
 import MyOffers from "../pages/myOffers/myOffers";
 import Statistics from "../pages/Statistics/Statistics";
+import NewsPage from "../pages/NewsPage/NewsPage";
 
 export default function PrincipalRoutes() {
   return (
@@ -20,6 +21,8 @@ export default function PrincipalRoutes() {
         <Route path="/revision-offers" element={<RevisionOffers />} />
         <Route path="/my-offers" element={<MyOffers />} />
         <Route path="/statistics" element={<Statistics />} />
+        <Route path="/news" element={<NewsPage />} />
+
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </>

@@ -36,6 +36,10 @@
     margin-bottom: 1rem;
     
   }
+  .divider{
+    border-bottom: 1px solid #005CA8;
+    margin-bottom: 3rem;
+  }
   
   .news-item p {
     font-size: 1rem;
@@ -55,7 +59,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .news-title-new{

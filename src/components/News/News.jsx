@@ -1,5 +1,4 @@
-import React from 'react';
-import { Card } from '@nextui-org/react';
+import { Card, Divider } from '@nextui-org/react';
 import "./NewsComponent.css";
 import newsData from '../../mocks/news.json';
 
@@ -33,6 +32,9 @@ function NewsItem({ title, description, image }) {
     return (
       <div className="news-section">
         <h1 className="news-title">NOVEDADES</h1>
+        <div className='divider'>
+        <Divider/>
+        </div>
         <div className="news-container">
           {newsData.map((item, index) => (
             <div className="news-item" key={index}>
