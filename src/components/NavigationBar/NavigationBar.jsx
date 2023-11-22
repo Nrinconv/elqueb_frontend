@@ -39,7 +39,7 @@ function NavigationBar() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      height="6rem"
+      height="5rem"
       isBordered="true"
       shouldHideOnScroll="true"
       maxWidth="2xl"
