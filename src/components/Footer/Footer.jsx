@@ -64,6 +64,19 @@ const Footer = () => {
             </FooterLink>
           </Column>
         </Row>
+        <p
+          style={{
+            color: "#fff",
+            textAlign: "center",
+            fontSize: "8px",
+          }}
+        >
+          La información y recursos de Findeter utilizados en este proyecto son
+          exclusivamente para el diseño del prototipo. Queda estrictamente
+          prohibido su uso para plagio u otros fines indebidos. Todos los
+          derechos de propiedad intelectual de las imágenes pertenecen a
+          Findeter.
+        </p>
       </FooterContainer>
     </Box>
   );
