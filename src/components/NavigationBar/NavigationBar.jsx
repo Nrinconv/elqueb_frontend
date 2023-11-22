@@ -13,6 +13,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
+import { NavLink } from "react-router-dom";
 
 function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -59,9 +60,9 @@ function NavigationBar() {
       <NavbarContent className="hidden sm:flex gap-10" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={`${item}-${index}`}>
-            <Link href={item.linkTo} id="text-nabvar">
+            <NavLink to={item.linkTo} id="text-nabvar">
               {item.name}
-            </Link>
+            </NavLink>
           </NavbarItem>
         ))}
       </NavbarContent>
