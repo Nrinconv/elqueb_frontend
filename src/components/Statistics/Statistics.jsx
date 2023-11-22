@@ -2,13 +2,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faStarHalfAlt, faHeartbeat,faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 import './StatisticsComponent.css';
 import { Divider } from "@nextui-org/react";
+import { GiStrong } from "react-icons/gi";
 
 function Statistics() {
     const stats = [
-      { icon: faUsers, title: 'Emprededores', description: 'Hemos apoyado alrededor 10M' },
-      { icon: faStarHalfAlt, title: 'Reviews', description: '4.5 average rating' },
-      { icon: faHeartbeat, title: 'Favorites', description: 'Over 1,000 favorites' },
-      { icon: faGlobeAmericas, title: 'Global Reach', description: 'Users from over 100 countries' },
+      { icon: <GiStrong />, title: 'Emprededores', description: 'Hemos apoyado alrededor 10M' },
+      { icon: <GiStrong />, title: 'Reviews', description: '4.5 average rating' },
+      { icon: <GiStrong />, title: 'Favorites', description: 'Over 1,000 favorites' },
+      { icon: <GiStrong />, title: 'Global Reach', description: 'Users from over 100 countries' },
     ];
   
     return (
@@ -18,7 +19,7 @@ function Statistics() {
           <div className="statistics-container">
             {stats.map((stat, index) => (
               <div key={index} className="statistic">
-                <FontAwesomeIcon icon={stat.icon} size="2x" />
+                <div>{stat.icon}</div>
                 <h3>{stat.title}</h3>
                 <p>{stat.description}</p>
               </div>
