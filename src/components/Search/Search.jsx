@@ -16,7 +16,7 @@ const SearchComponent = () => {
         <Grid sx={{ marginTop: '1rem', 
                     marginRight: '2rem', 
                     marginBottom: '3rem', 
-                    marginLeft: '4rem'
+                    marginLeft: '4rem',
                      }}>
       <Typography variant="h4" className={styles.title}>
         ¿Estás buscando potenciar tu negocio?
@@ -45,6 +45,7 @@ const SearchComponent = () => {
     marginBottom: '3rem', 
     marginLeft: '4rem' }}>
       <Button
+      sx={{ borderRadius: '80px' }}
       className={styles.button}
       variant="contained">
       Buscar
