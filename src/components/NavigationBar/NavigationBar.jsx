@@ -33,7 +33,7 @@ function NavigationBar() {
     },
     {
       name: "Novedades",
-      linkTo: "novedades",
+      linkTo: "news",
     },
   ];
 

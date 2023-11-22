@@ -24,10 +24,6 @@ export default function Home() {
       <Divider/>
 
       <Cards />
-
-      <div style={{ marginTop: "4rem", marginBottom: "8rem" }}>
-        <News />
-      </div>
       <Divider id="divider-section" />
       <Divider id="divider-section" />
       <Divider id="divider-section" />

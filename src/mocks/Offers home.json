@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulo": "Descuento en maquinaria agrícola",
+    "descripcion": "Oferta especial para agricultores. Obtén un 15% de descuento en la compra de maquinaria agrícola. ¡Moderniza tu granja con nosotros!",
+    "ofertante": "AgroInnova",
+    "imagen": 1
+  },
+  {
+    "id": 2,
+    "titulo": "Curso gratuito de marketing digital",
+    "descripcion": "Aprende las últimas estrategias de marketing digital. Curso intensivo gratuito con certificación al finalizar. ¡Potencia tu negocio online!",
+    "ofertante": "Digital Academy",
+    "imagen": 2
+  },
+  {
+    "id": 3,
+    "titulo": "Kit de herramientas para emprendedores",
+    "descripcion": "Empieza tu propio negocio con nuestro kit de herramientas esenciales. Incluye todo lo que necesitas para comenzar tu aventura emprendedora.",
+    "ofertante": "EmprendeKit",
+    "imagen": 3
+  },
+  {
+    "id": 4,
+    "titulo": "Descuento en equipo de cocina profesional",
+    "descripcion": "Para restaurantes y chefs. Obtén un 20% de descuento en la compra de equipos de cocina profesional. ¡Mejora la eficiencia de tu cocina!",
+    "ofertante": "Gastronova",
+    "imagen": 1
+  }
+]
