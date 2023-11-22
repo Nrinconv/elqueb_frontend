@@ -1,20 +1,19 @@
-import { Card, Link as NextLink } from '@nextui-org/react';
-import './CardsComponent.css';
-import image1 from '../../assets/proyecto.jpg';
-import Offer from '../Offers/Offer'
+import { Card, Link as NextLink } from "@nextui-org/react";
+import "./CardsComponent.css";
+import image1 from "../../assets/proyecto.jpg";
+import Offer from "../Offers/Offer";
 function Cards() {
-  
   const cards = [
-    {link: '/proyectos', image: image1, text: 'Proyectos'},
-    {link: '/about', image: image1, text: 'Proyectos'},
-    {link: '/about', image: image1, text: 'Proyectos'},
-    {link: '/about', image: image1, text: 'Proyectos'},
-    {link: '/about', image: image1, text: 'Proyectos'},
+    { link: "/proyectos", image: image1, text: "Proyectos" },
+    { link: "/about", image: image1, text: "Proyectos" },
+    { link: "/about", image: image1, text: "Proyectos" },
+    { link: "/about", image: image1, text: "Proyectos" },
+    { link: "/about", image: image1, text: "Proyectos" },
   ];
 
   return (
     <div>
-      <h2 className="cards-title">Conozca la oferta de productos y servicios que Findeter tiene para las entidades territoriales y las empresas</h2>
+      <h2 className="cards-title">Ofertas recomendadas</h2>
       <div className="cards-container">
         {/* {cards.map((card, index) => (
           <NextLink key={index} href={card.link}>
@@ -23,7 +22,7 @@ function Cards() {
             </Card>
           </NextLink>
         ))} */}
-        <Offer/>
+        <Offer />
       </div>
     </div>
   );
