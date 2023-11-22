@@ -15,6 +15,7 @@ export default function PrincipalRoutes() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/offers" element={<Offers />} />
+        <Route path="/offers/:busqueda" element={<Offers />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/add-offer" element={<AddOffer />} />
