@@ -10,11 +10,11 @@ const AccessibilityBar = () => {
     const toggleColors = () => {
         setInvertColors(!invertColors);
         if (!invertColors) {
-        document.body.style.filter = 'invert(1)';
-        document.body.style.backgroundColor = 'black';
+        document.documentElement.style.filter = 'invert(1)';
+        document.documentElement.style.backgroundColor = 'black';
         } else {
-        document.body.style.filter = 'none';
-        document.body.style.backgroundColor = 'white';
+        document.documentElement.style.filter = 'none';
+        document.documentElement.style.backgroundColor = 'white';
         }
     };
     const increaseFontSize = () => {
