@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "superx";
+  src: url("./assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype"); /* Adjust the file path and format as needed */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import styles from "./Search.module.css";
-
+import "./Search.css";
 import { Link } from "react-router-dom";
 
 import backgroundImage from "../../assets/campo.png";
@@ -30,12 +30,14 @@ const SearchComponent = () => {
               marginLeft: "4rem",
             }}
           >
-            <Typography variant="h4" className={styles.title}>
+            <h4 className="sapo">¿Estás buscando potenciar tu negocio?</h4>
+            <p className="soso">Conectamos oportunidades con emprendedores</p>
+            {/* <Typography variant="h4" className={styles.title}>
               ¿Estás buscando potenciar tu negocio?
             </Typography>
             <Typography variant="body1" className={styles.text}>
               Conectamos oportunidades con emprendedores
-            </Typography>
+            </Typography> */}
           </Grid>
 
           <Grid

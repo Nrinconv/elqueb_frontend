@@ -1,5 +1,5 @@
 import "./App.css";
-import  { useState } from 'react';
+import "./fonts.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import AccessibilityBar from "./components/AccessibilityBar/AccessibilityBar";
@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <NavigationBar />
-      <AccessibilityBar/>
+      <AccessibilityBar />
       <Routes>
         <Route path="/*" element={<PrincipalRoutes />} />
       </Routes>
