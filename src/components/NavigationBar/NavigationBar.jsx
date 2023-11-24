@@ -111,7 +111,7 @@ function NavigationBar() {
               </NavLink>
             </NavbarItem>
           ))
-        ) : user === "Ofertante" ? (
+        ) : user === "Findeter" ? (
           menuItemsOfertante.map((item, index) => (
             <NavbarItem key={`${item}-${index}`}>
               <NavLink to={item.linkTo} id="text-nabvar">
