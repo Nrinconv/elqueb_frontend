@@ -1,7 +1,7 @@
 import { Card, Link as NextLink } from "@nextui-org/react";
 import "./CardsComponent.css";
 import image1 from "../../assets/proyecto.jpg";
-import Offer from "../Offers/Offer";
+import Recomendados from "../Offers/recomendados";
 function Cards() {
   const cards = [
     { link: "/proyectos", image: image1, text: "Proyectos" },
@@ -22,7 +22,7 @@ function Cards() {
             </Card>
           </NextLink>
         ))} */}
-        <Offer />
+        <Recomendados />
       </div>
     </div>
   );

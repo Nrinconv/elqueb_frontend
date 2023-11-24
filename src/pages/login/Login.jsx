@@ -1,5 +1,5 @@
 import "./Login.css";
-import React from "react";
+import { useState } from "react";
 import {
   Tabs,
   Tab,
@@ -10,9 +10,16 @@ import {
   CardHeader,
   CardBody,
 } from "@nextui-org/react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const [selected, setSelected] = React.useState("login");
+  const [selected, setSelected] = useState("login");
+  const [user, setUser] = useState();
+  const navigate = useNavigate();
+
+  const saveUser = () => {
+    sessionStorage.setItem("user", user);
+  };
 
   return (
     <div className="flex flex-col w-full" id="general-form">
@@ -38,10 +45,11 @@ export default function Login() {
               <form className="flex flex-col gap-4">
                 <Input
                   isRequired
-                  label="Correo electrónico"
-                  placeholder="ingresa tu correo"
-                  type="email"
+                  label="Usuario"
+                  placeholder="ingresa tu usuario"
+                  type="text"
                   id="card-login-text"
+                  onChange={(e) => setUser(e.target.value)}
                 />
                 <Input
                   isRequired
@@ -61,7 +69,14 @@ export default function Login() {
                   </Link>
                 </p>
                 <div className="flex gap-2 justify-end">
-                  <Button fullWidth color="primary" id="btn-form">
+                  <Button
+                    as={Link}
+                    color="primary"
+                    href="/home"
+                    fullWidth
+                    id="btn-form"
+                    onClick={saveUser}
+                  >
                     Iniciar sesión
                   </Button>
                 </div>

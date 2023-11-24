@@ -18,20 +18,29 @@ import {
 } from "@nextui-org/react";
 import { useState } from "react";
 
+function asignarImagen(numero) {
+  if (numero >= 0 && numero <= 100) {
+    // Utiliza el operador de módulo para asignar un número único a 1, 2 o 3
+    return (numero % 3) + 1;
+  } else {
+    return null; // Manejar el caso cuando el número está fuera del rango
+  }
+}
+
 const relation = {
   1: imageOne,
   2: imageTwo,
   3: imageThree,
 };
 
-export default function Offer() {
+export default function OfferS({ dataInfo }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [infoModal, setInfoModal] = useState({});
 
   return (
     <>
       <div className="gap-8 grid grid-cols-2 sm:grid-cols-4">
-        {dataOffers.map((data) => (
+        {dataInfo.map((data) => (
           <Card
             className="py-4"
             key={data.id}
@@ -47,15 +56,15 @@ export default function Offer() {
                 Oferta: {data.ofertante}
               </p>
               <h4 className="font-bold text-large" id="title-cards-offer">
-                {data.titulo}
+                {data.title}
               </h4>
             </CardHeader>
             <CardBody className="overflow-visible py-2" id="img-offer">
               <Image
                 isZoomed
-                alt={data.titulo}
+                alt={data.title}
                 className="object-cover rounded-xl"
-                src={relation[data.imagen]}
+                src={relation[asignarImagen(data.id)]}
                 width={300}
                 shadow="none"
               />
@@ -68,16 +77,16 @@ export default function Offer() {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                {infoModal.titulo}
+                {infoModal.title}
               </ModalHeader>
               <ModalBody>
                 <h3>{infoModal.ofertante}</h3>
-                <p>{infoModal.descripcion}</p>
+                <p>{infoModal.description}</p>
                 <div id="img-offer">
                   <Image
-                    alt={infoModal.titulo}
+                    alt={infoModal.title}
                     className="object-cover rounded-xl"
-                    src={relation[infoModal.imagen]}
+                    src={relation[asignarImagen(infoModal.id)]}
                     width={300}
                   />
                 </div>

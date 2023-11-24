@@ -61,10 +61,17 @@ export default function Filters() {
             id="btn-dropdown-inner"
           >
             <DropdownItem key="cat1">Categoría</DropdownItem>
-            <DropdownItem key="cat2">Cat2</DropdownItem>
-            <DropdownItem key="cat3">Cat3</DropdownItem>
-            <DropdownItem key="cat4">Cat4</DropdownItem>
-            <DropdownItem key="cat5">Cat5</DropdownItem>
+            <DropdownItem key="cat2">Alimentacion</DropdownItem>
+            <DropdownItem key="cat3">Productos Personales</DropdownItem>
+            <DropdownItem key="cat4">Ropa y Calzado</DropdownItem>
+            <DropdownItem key="cat5">Productos de Limpieza</DropdownItem>
+            <DropdownItem key="cat5">Cuidado Infantil</DropdownItem>
+            <DropdownItem key="cat5">Medicamentos</DropdownItem>
+            <DropdownItem key="cat5">Tecnologia</DropdownItem>
+            <DropdownItem key="cat5">Transporte</DropdownItem>
+            <DropdownItem key="cat5">Inmobiliario</DropdownItem>
+            <DropdownItem key="cat5">Servicios Basicos</DropdownItem>
+            <DropdownItem key="cat5">Otros</DropdownItem>
           </DropdownMenu>
         </Dropdown>
         <Dropdown id="filter">
@@ -83,10 +90,12 @@ export default function Filters() {
             id="btn-dropdown-inner"
           >
             <DropdownItem key="cat1">Región</DropdownItem>
-            <DropdownItem key="cat2">Cat2</DropdownItem>
-            <DropdownItem key="cat3">Cat3</DropdownItem>
-            <DropdownItem key="cat4">Cat4</DropdownItem>
-            <DropdownItem key="cat5">Cat5</DropdownItem>
+            <DropdownItem key="cat2">Andina</DropdownItem>
+            <DropdownItem key="cat3">Caribe</DropdownItem>
+            <DropdownItem key="cat4">Orinoquía</DropdownItem>
+            <DropdownItem key="cat5">Amazonía</DropdownItem>
+            <DropdownItem key="cat5">Pacífico</DropdownItem>
+            <DropdownItem key="cat5">Insular</DropdownItem>
           </DropdownMenu>
         </Dropdown>
         <Dropdown className="filter">
@@ -106,10 +115,10 @@ export default function Filters() {
             id="btn-dropdown-inner"
           >
             <DropdownItem key="cat1">Ofertantes</DropdownItem>
-            <DropdownItem key="cat2">Cat2</DropdownItem>
-            <DropdownItem key="cat3">Cat3</DropdownItem>
-            <DropdownItem key="cat4">Cat4</DropdownItem>
-            <DropdownItem key="cat5">Cat5</DropdownItem>
+            <DropdownItem key="cat2">Findeter</DropdownItem>
+            <DropdownItem key="cat3">Unal</DropdownItem>
+            <DropdownItem key="cat4">Colsubsidio</DropdownItem>
+            <DropdownItem key="cat5">Compensar</DropdownItem>
           </DropdownMenu>
         </Dropdown>
         <Button color="primary" variant="bordered" id="btn-search">

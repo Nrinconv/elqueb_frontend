@@ -13,7 +13,7 @@ export default function Offers() {
       <div className="filters-content">
         <Filters />
       </div>
-      <h3 id="h3">Resultados para: {busqueda}</h3>
+      {busqueda ? <h3 id="h3">Resultados para: {busqueda}</h3> : <></>}
       <div className="offer-content">
         <Offer />
       </div>
