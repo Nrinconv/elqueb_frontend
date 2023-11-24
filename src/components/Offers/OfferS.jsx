@@ -16,7 +16,8 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { busquedaInfo } from "../../services/general";
 
 function asignarImagen(numero) {
   if (numero >= 0 && numero <= 100) {
@@ -36,11 +37,20 @@ const relation = {
 export default function OfferS({ dataInfo }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [infoModal, setInfoModal] = useState({});
+  const [info, setInfo] = useState([]);
+
+  async function fetchDataAsync(bsq) {
+    setInfo(await busquedaInfo(bsq));
+  }
+
+  useEffect(() => {
+    fetchDataAsync(dataInfo);
+  }, [dataInfo]);
 
   return (
     <>
       <div className="gap-8 grid grid-cols-2 sm:grid-cols-4">
-        {dataInfo.map((data) => (
+        {info.map((data) => (
           <Card
             className="py-4"
             key={data.id}

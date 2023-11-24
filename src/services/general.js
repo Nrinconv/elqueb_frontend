@@ -16,9 +16,9 @@ export const busquedaInfo = async (busqueda) => {
 export const recommendedInfo = async (id) => {
   const response = await axios.get(`${apiUrl}/ofertas/recommendOfertas/${id}`, {
     /* params: {
-      start_date,
-      end_date,
-    },
+      id,
+    }, */
+    /* 
     headers: "getHeaders()", */
   });
 

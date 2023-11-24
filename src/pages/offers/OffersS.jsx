@@ -105,7 +105,7 @@ const optionTwo = [
 
 export default function OffersS() {
   let { busqueda } = useParams();
-  const [info, setInfo] = useState();
+  /*  const [info, setInfo] = useState();
 
   async function fetchDataAsync(bsq) {
     setInfo(await busquedaInfo(bsq));
@@ -113,7 +113,7 @@ export default function OffersS() {
 
   useEffect(() => {
     fetchDataAsync(busqueda);
-  }, []);
+  }, [busqueda]); */
 
   return (
     <>
@@ -123,7 +123,7 @@ export default function OffersS() {
       </div>
       <h3 id="h3">Resultados para: {busqueda}</h3>
       <div className="offer-content">
-        <OfferS dataInfo={info} />
+        <OfferS dataInfo={busqueda} />
       </div>
       {/* {busqueda ==
       "Necesito ayuda creando una pagina web que utilice las ultimas tecnologias y utilice diseño web moderno para hacer marketing a mi empresa de mudanzas y limpieza" ? (
