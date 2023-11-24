@@ -3,7 +3,7 @@ import axios from "axios";
 const apiUrl = " localhost:8000/";
 
 export const busquedaInfo = async (busqueda) => {
-  const response = await axios.get(`${apiUrl}/ofertas/${busqueda}`, {
+  const response = await axios.post(`${apiUrl}/ofertas/${busqueda}`, {
     /* params: {
       start_date,
       end_date,
@@ -11,7 +11,7 @@ export const busquedaInfo = async (busqueda) => {
     headers: "getHeaders()", */
   });
 
-  return response.data;
+  return response;
 };
 
 export const recommendedInfo = async (id) => {
@@ -23,5 +23,5 @@ export const recommendedInfo = async (id) => {
     headers: "getHeaders()", */
   });
 
-  return response.data;
+  return response;
 };
