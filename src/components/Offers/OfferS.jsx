@@ -59,7 +59,7 @@ export default function OfferS({ dataInfo }) {
           {info.map((data) => (
             <Card
               className="py-4"
-              key={data.id}
+              key={data.ofertaid}
               isPressable
               onPress={onOpen}
               onClick={() => {
@@ -80,7 +80,7 @@ export default function OfferS({ dataInfo }) {
                   isZoomed
                   alt={data.title}
                   className="object-cover rounded-xl"
-                  src={relation[asignarImagen(data.id)]}
+                  src={relation[asignarImagen(data.ofertaid)]}
                   width={300}
                   shadow="none"
                 />
@@ -102,7 +102,7 @@ export default function OfferS({ dataInfo }) {
                     <Image
                       alt={infoModal.title}
                       className="object-cover rounded-xl"
-                      src={relation[asignarImagen(infoModal.id)]}
+                      src={relation[asignarImagen(infoModal.ofertaid)]}
                       width={300}
                     />
                   </div>
