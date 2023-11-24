@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Field, Form } from 'formik';
-import './AddOffer.css';
+import './addOffer.css';
 
 const AddOffer = () => {
   const handleSubmit = (values) => {
