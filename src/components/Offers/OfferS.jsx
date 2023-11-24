@@ -55,6 +55,7 @@ export default function OfferS({ dataInfo }) {
     return (
       <>
         <div className="gap-8 grid grid-cols-2 sm:grid-cols-4">
+          {console.log(info)}
           {info.map((data) => (
             <Card
               className="py-4"

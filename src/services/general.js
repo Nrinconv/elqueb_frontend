@@ -1,16 +1,14 @@
 import axios from "axios";
 
-const apiUrl = " localhost:8000";
+const apiUrl = "http://localhost:8000";
 
 export const busquedaInfo = async (busqueda) => {
   const response = await axios.post(`${apiUrl}/ofertas/semanticSearch`, {
-    params: {
-      search_term: busqueda,
-    },
+    search_term: busqueda,
     /* headers: "getHeaders()", */
   });
 
-  return response;
+  return response.data;
 };
 
 export const recommendedInfo = async (id) => {
@@ -22,5 +20,5 @@ export const recommendedInfo = async (id) => {
     headers: "getHeaders()", */
   });
 
-  return response;
+  return response.data;
 };
