@@ -81,8 +81,10 @@ export default function Recomendados() {
   useEffect(() => {
     if (sessionStorage.getItem("user")) {
       fetchDataAsync(2);
+    } else {
+      setInfo(dataOffers);
+      setLoading(false);
     }
-    setInfo(dataOffers);
   }, []);
 
   if (loading) {
