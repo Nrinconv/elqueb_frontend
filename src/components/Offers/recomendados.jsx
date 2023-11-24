@@ -34,33 +34,33 @@ const relation = {
 
 const dataOffers = [
   {
-    id: 1,
-    titulo: "Descuento en maquinaria agrícola",
-    descripcion:
+    ofertaid: 1,
+    title: "Descuento en maquinaria agrícola",
+    description:
       "Oferta especial para agricultores. Obtén un 15% de descuento en la compra de maquinaria agrícola. ¡Moderniza tu granja con nosotros!",
     ofertante: "AgroInnova",
     imagen: 1,
   },
   {
-    id: 2,
-    titulo: "Curso gratuito de marketing digital",
-    descripcion:
+    ofertaid: 2,
+    title: "Curso gratuito de marketing digital",
+    description:
       "Aprende las últimas estrategias de marketing digital. Curso intensivo gratuito con certificación al finalizar. ¡Potencia tu negocio online!",
     ofertante: "Digital Academy",
     imagen: 3,
   },
   {
-    id: 3,
-    titulo: "Kit de herramientas para emprendedores",
-    descripcion:
+    ofertaid: 3,
+    title: "Kit de herramientas para emprendedores",
+    description:
       "Empieza tu propio negocio con nuestro kit de herramientas esenciales. Incluye todo lo que necesitas para comenzar tu aventura emprendedora.",
     ofertante: "EmprendeKit",
     imagen: 2,
   },
   {
-    id: 4,
-    titulo: "Descuento en equipo de cocina profesional",
-    descripcion:
+    ofertaid: 4,
+    title: "Descuento en equipo de cocina profesional",
+    description:
       "Para restaurantes y chefs. Obtén un 20% de descuento en la compra de equipos de cocina profesional. ¡Mejora la eficiencia de tu cocina!",
     ofertante: "Gastronova",
     imagen: 3,
